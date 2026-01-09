@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\PC_User\\\\Desktop\\\\shipmate_hp\" -Recurse -Name)",
+      "Bash(Where-Object { $_ -notmatch \"node_modules|\\\\.git\" })"
+    ]
+  }
+}
