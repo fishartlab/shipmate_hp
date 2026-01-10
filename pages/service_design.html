@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>デザイン制作 | SHIPMATE</title>
+    <link rel="stylesheet" href="../globals.css" />
+    <link rel="stylesheet" href="../assets/css/styleguide.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+    <div class="page">
+        <div id="header"></div>
+
+        <main class="product-page">
+        <!-- 2カラム：ギャラリー / 商品情報 -->
+        <section class="product-hero">
+        <!-- 左：ギャラリー -->
+        <div class="gallery">
+            <div class="gallery__frame">
+            <button class="gallery__nav gallery__nav--prev" type="button" aria-label="前の画像">‹</button>
+            <div class="gallery__placeholder" aria-label="商品画像">
+                <span class="gallery__placeholder-icon" aria-hidden="true">🖼️</span>
+            </div>
+            <button class="gallery__nav gallery__nav--next" type="button" aria-label="次の画像">›</button>
+
+            <div class="gallery__dots" aria-label="画像インジケータ">
+                <span class="dot dot--active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            </div>
+        </div>
+
+        <!-- 右：商品情報 -->
+        <div class="product-info">
+            <nav class="breadcrumb" aria-label="パンくず">
+            <a href="#">Shop</a>
+            <span class="breadcrumb__sep">›</span>
+            <a href="#">Category</a>
+            <span class="breadcrumb__sep">›</span>
+            <span aria-current="page">Product name</span>
+            </nav>
+
+            <h1 class="product-info__title">Product name</h1>
+
+            <div class="product-info__price">
+            <span class="price">S$55</span>
+            <span class="rating" aria-label="評価">
+                ★★★★★ <span class="rating__count">(6 reviews)</span>
+            </span>
+            </div>
+
+            <p class="product-info__desc">
+            漁船の集客や情報発信に必要な各種デザイン制作を手がけます。<br>
+            ロゴやバナーからSNS投稿用デザイン、横断幕、膝乗せシートまで、<br>
+            実際の使用シーンを想定した制作物を対象としています。
+            </p>
+
+            <ul class="product-info__bullets">
+            <li>ロゴ・バナー制作</li>
+            <li>SNS投稿デザイン</li>
+            <li>画像編集・簡単なテンプレート</li>
+            </ul>
+
+            <div class="form">
+            <label class="field">
+                <span class="field__label">制作内容</span>
+                <select class="field__control">
+                <option selected>選択してください</option>
+                <option>ロゴ・バナー制作</option>
+                <option>SNS投稿デザイン</option>
+                <option>画像編集・テンプレート</option>
+                </select>
+            </label>
+
+            <div class="field">
+                <span class="field__label">用途</span>
+                <div class="segmented" role="group" aria-label="用途">
+                <button class="segmented__btn is-active" type="button">Web・SNS向け</button>
+                <button class="segmented__btn" type="button">印刷物向け</button>
+                <button class="segmented__btn" type="button" disabled>準備中</button>
+                </div>
+            </div>
+
+            <div class="qty-row">
+                <label class="field qty">
+                <span class="field__label">数量</span>
+                <div class="qty__box">
+                    <button class="qty__btn" type="button" aria-label="減らす">−</button>
+                    <input class="qty__input" type="number" value="1" min="1" />
+                    <button class="qty__btn" type="button" aria-label="増やす">＋</button>
+                </div>
+                </label>
+            </div>
+
+            <button class="btn btn--primary" type="button">相談を申し込む</button>            
+            <button class="btn btn--outline" type="button">詳細を見る</button>
+
+            <div class="btn-row">
+            </div>
+
+            <!-- 下：説明 -->
+            </div>
+                <div class="detail-grid">
+                <article class="detail-block">
+                <h2 class="detail-block__title">ロゴ・バナー制作</h2>
+                <p class="detail-block__text">
+                    船宿やサービスの雰囲気が伝わるロゴ・バナーを制作します。Web、SNS、印刷に展開しやすい形式で納品します。
+                </p>
+                </article>
+
+                <article class="detail-block">
+                <h2 class="detail-block__title">SNS投稿デザイン</h2>
+                <p class="detail-block__text">
+                    Instagram向けの投稿テンプレートを用意します。写真や文字の配置を揃え、更新しやすい運用を支援します。
+                </p>
+                </article>
+
+                <article class="detail-block">
+                <h2 class="detail-block__title">画像編集・簡単なテンプレート</h2>
+                <p class="detail-block__text">
+                    写真の明るさ補正・トリミング・文字入れなどを行い、投稿やLPで見栄えする状態に整えます。
+                </p>
+                </article>
+            </div>
+        </div>
+        </section>
+
+        <!-- 基本セクション（左画像・右テキスト） -->
+        <div class="two-col-section two-col-section--alt-bg two-col-section--reverse">
+            <div class="two-col__container">
+                <div class="two-col__content">
+                    <div class="two-col__text">
+                        <div class="section-tagline">
+                            <span>基本</span>
+                        </div>
+                        <h2 class="two-col__title">ロゴとバナーで伝わりやすく</h2>
+                        <p class="two-col__description">
+                            漁船やサービスの雰囲気が伝わるロゴやバナーを制作します。<br>
+                            Web、SNS、印刷物など<br>
+                            複数の用途を想定し、派手さよりも分かりやすさを重視した設計です。
+                        </p>
+                        <div class="two-col__actions">
+                            <button class="two-col__btn">詳しく</button>
+                        </div>
+                    </div>
+                    <div class="two-col__image">
+                        <img src="../assets/img/pages/service_design/basic.png" alt="基本" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 発信セクション（左テキスト・右画像） -->
+        <div class="two-col-section two-col-section--alt-bg two-col-section">
+            <div class="two-col__container">
+                <div class="two-col__content">
+                    <div class="two-col__text">
+                        <div class="section-tagline">
+                            <span>発信</span>
+                        </div>
+                        <h2 class="two-col__title">SNS投稿を見やすく整える</h2>
+                        <p class="two-col__description">
+                            Instagram等で使用する投稿用デザインを制作します。<br>
+                            写真や文章が見やすく整理され、継続的な発信で使いやすい形式を想定しています。<br>
+                        </p>
+                        <div class="two-col__actions">
+                            <button class="two-col__btn">詳しく</button>
+                        </div>
+                    </div>
+                    <div class="two-col__image">
+                        <img src="../assets/img/pages/service_design/output.png" alt="発信" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 現場セクション（左画像・右テキスト） -->
+        <div class="two-col-section two-col-section--alt-bg two-col-section--reverse">
+            <div class="two-col__container">
+                <div class="two-col__content">
+                    <div class="two-col__text">
+                        <div class="section-tagline">
+                            <span>現場</span>
+                        </div>
+                        <h2 class="two-col__title">横断幕で存在を伝える</h2>
+                        <p class="two-col__description">
+                            港やイベント時に使用する横断幕のデザインを制作します。<br>
+                            遠くからでも内容が伝わる構成で、現場での設置を前提にしたサイズ感を考慮しています。
+                        </p>
+                        <div class="two-col__actions">
+                            <button class="two-col__btn">詳しく</button>
+                        </div>
+                    </div>
+                    <div class="two-col__image">
+                        <img src="../assets/img/pages/service_design/field.png" alt="現場" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 乗船セクション（左テキスト・右画像） -->
+        <div class="two-col-section two-col-section--alt-bg two-col-section">
+            <div class="two-col__container">
+                <div class="two-col__content">
+                    <div class="two-col__text">
+                        <div class="section-tagline">
+                            <span>乗船</span>
+                        </div>
+                        <h2 class="two-col__title">膝乗せシートで案内を届ける</h2>
+                        <p class="two-col__description">
+                            乗船時や移動中に使用する膝乗せシートのデザインを制作します。<br>
+                            注意事項や案内が自然に目に入り、現場で扱いやすい情報量にまとめています。
+                        </p>
+                        <p class="two-col__description">
+                            ・安全情報が目に入る<br>
+                            ・現場で扱いやすい<br>
+                            ・継続的に使える
+                        </p>
+                        <div class="two-col__actions">
+                            <button class="two-col__btn">詳しく</button>
+                        </div>
+                    </div>
+                    <div class="two-col__image">
+                        <img src="../assets/img/pages/service_design/onship.png" alt="乗船" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- スクロールナビセクション -->
+        <section class="scroll-nav">
+            <div class="scroll-nav__inner">
+                <p class="scroll-nav__tagline">利用シーン</p>
+                <div class="scroll-nav__head">
+                    <div class="scroll-nav__no">01</div>
+                    <h2 class="scroll-nav__title">利用シーンを確認</h2>
+                </div>
+                <!-- TODO：ページ遷移せずにわかりやすくしたい -->
+            </div>
+        </section>
+
+
+        <!-- ⑥ クロージングセクション -->
+        <div class="about-closing-section">
+            <div class="about-closing-container">
+                <div class="about-closing-content">
+                    <h2 class="about-closing-title">必要なものを、必要な形で</h2>
+                    <p class="about-closing-subtitle">
+                        ご要望に応じて対応いたします。まずはお気軽にご相談ください。
+                    </p>
+                    <div class="about-closing-actions">
+                        <button class="about-closing-btn-primary">相談する</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="footer"></div>
+    </div>
+    <script src="../assets/js/components.js"></script>
+</body>
+
+</html>
