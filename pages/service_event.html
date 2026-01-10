@@ -14,9 +14,286 @@
     <div class="page">
         <div id="header"></div>
 
-        <!-- Service Event Content -->
-        <div class="service-page-content">
-            <!-- ここにイベント企画・運営ページのコンテンツを追加 -->
+        <!-- ① ファーストビュー（ヒーローセクション） -->
+        <div class="hero-section">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        釣りをイベントにする
+                    </h1>
+                    <p class="hero__subtitle">
+                        大会そのものが、忘れられない体験になる。<br>
+                        漁船での釣りを、いつもと違う一日に変えてみませんか。
+                    </p>
+                    <div class="hero__actions">
+                        <button class="hero__btn hero__btn--primary">相談する</button>
+                        <button class="hero__btn">詳しく見る</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 画像表示 -->
+        <img src="../assets/img/pages/service_event/big_image.png" alt="インパクトのある画像" />
+
+        <!-- 体験セクション（左テキスト・右画像） -->
+        <div class="two-col-section two-col-section--alt-bg two-col-section--reverse">
+            <div class="two-col__container">
+                <div class="two-col__content">
+                    <div class="two-col__text">
+                        <div class="section-tagline">
+                            <span>体験</span>
+                        </div>
+                        <h2 class="two-col__title">釣りの喜びは、一緒に味わうときに光る</h2>
+                        <p class="two-col__description">
+                            釣りの楽しさは本来、誰かと分かち合うことで深まるものです。<br>
+                            イベントとして開催することで、<br>
+                            初めての方や初心者にも参加しやすく、交流と発見の場が自然に生まれます。
+                        </p>
+                        <div class="two-col__actions">
+                            <button class="two-col__btn">詳しく</button>
+                        </div>
+                    </div>
+                    <div class="two-col__image">
+                        <img src="../assets/img/pages/service_event/experience.png" alt="体験" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 提供セクション（左テキスト・右画像） -->
+        <div class="two-col-section two-col-section--alt-bg two-col-section--reverse">
+            <div class="two-col__container">
+                <div class="two-col__content">
+                    <div class="two-col__text">
+                        <div class="section-tagline">
+                            <span>提供</span>
+                        </div>
+                        <h2 class="two-col__title">釣果を形に残す、大会の価値</h2>
+                        <p class="two-col__description">
+                            優勝者にはデジタル魚拓を景品として。<br>
+                            釣った魚の記録だけでなく、その日の体験そのものが形に残ります。
+                        </p>
+                        <div class="two-col__actions">
+                            <button class="two-col__btn">詳しく</button>
+                        </div>
+                    </div>
+                    <div class="two-col__image">
+                        <img src="../assets/img/pages/service_event/support.png" alt="提供" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 流れセクション（3カード） -->
+        <section class="feature-section">
+            <div class="feature-section__inner">
+                <p class="feature-section__eyebrow">流れ</p>
+                <h2 class="feature-section__title">当日までの準備が集客を決める</h2>
+                <p class="feature-section__lead">大会開催前からInstagramで継続的に発信</p>
+
+                <div class="feature-cards">
+                <!-- 左：横長カード（準備 + 画像） -->
+                <article class="feature-card feature-card--wide">
+                    <div class="feature-wide">
+                        <div class="feature-wide__text">
+                            <p class="feature-wide__tag">準備</p>
+                            <h3 class="feature-wide__title">開催前の情報発信</h3>
+                            <p class="feature-wide__desc">
+                            遠征や船長からInstagramで大会の様子や見どころを投稿。
+                            見慣れたく、着実に認知が広がります。
+                            </p>
+                            <a class="feature-wide__link" href="#" aria-label="詳細を見る">→</a>
+                        </div>
+
+                        <img src="../assets/img/pages/service_event/prepare.png" alt="準備" />
+                    </div>
+                </article>
+
+                <!-- 中：縦長カード -->
+                <article class="feature-card feature-card--tall">
+                    <div class="feature-tall">
+                    <div class="feature-tall__icon" aria-hidden="true">
+                        <!-- 仮アイコン：船 -->
+                        <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M3 18h18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        <path d="M6 16l6-3 6 3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 12V7h6l2 3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 7h-1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+
+                    <h3 class="feature-tall__title">当日の体験設計</h3>
+                    <p class="feature-tall__desc">
+                        初めて来る参加者に楽しめる流れ、船長の負担を減らす導線を用意。
+                        現場の動きを大切にします。
+                    </p>
+                    <a class="feature-tall__link" href="#" aria-label="詳細を見る">→</a>
+                    </div>
+                </article>
+
+                <!-- 右：縦長カード -->
+                <article class="feature-card feature-card--tall">
+                    <div class="feature-tall">
+                    <div class="feature-tall__icon" aria-hidden="true">
+                        <!-- 仮アイコン：トロフィー -->
+                        <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M8 4h8v3c0 2.76-2.24 5-5 5h-1c-2.76 0-5-2.24-5-5V4Z"
+                                stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+                        <path d="M7 6H4c0 3 2 5 5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        <path d="M17 6h3c0 3-2 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        <path d="M12 12v5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        <path d="M9 20h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        <path d="M10 17h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+
+                    <h3 class="feature-tall__title">大会後の記念化</h3>
+                    <p class="feature-tall__desc">
+                        デジタルの導線を整えることにより、参加者の思い出を残す。
+                        また来たいと思わせる仕掛けです。
+                    </p>
+                    <a class="feature-tall__link" href="#" aria-label="詳細を見る">→</a>
+                    </div>
+                </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 現場セクション（中央表示） -->
+        <section class="cta-section">
+            <div class="cta-section__inner">
+                <p class="cta-section__eyebrow">現場</p>
+
+                <h2 class="cta-section__title">船長の負担を減らす</h2>
+
+                <p class="cta-section__lead">
+                企画から当日まで、一緒に進める
+                </p>
+            </div>
+        </section>
+        <div class="two-col-section two-col-section--alt-bg two-col-section">
+            <div class="two-col__container">
+                <div class="two-col__content">
+                    <div class="two-col__text">
+                        <div class="section-tagline">
+                            <span>姿勢</span>
+                        </div>
+                        <h2 class="two-col__title">企画段階での相談</h2>
+                        <p class="two-col__description">
+                            大会の形式や流れを一緒に決めます。<br>
+                            現場の動きを知っているからこそ、無理のない進行を心がけています。
+                        </p>
+                        <div class="two-col__actions">
+                            <button class="two-col__btn">詳しく</button>
+                        </div>
+                    </div>
+                    <div class="two-col__image">
+                        <img src="../assets/img/pages/service_event/pose.png" alt="姿勢" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- こんな方へ（3カード） -->
+        <section class="feature-section">
+            <div class="feature-section__inner">
+                <p class="feature-section__eyebrow">こんな方へ</p>
+                <h2 class="feature-section__title">イベントに挑戦したい</h2>
+                <p class="feature-section__lead">常連以外にも来てほしい</p>
+
+                <div class="feature-cards">
+                <!-- 左：横長カード（チャレンジ + 画像） -->
+                <article class="feature-card feature-card--wide">
+                    <div class="feature-wide">
+                        <div class="feature-wide__text">
+                            <p class="feature-wide__tag">チャレンジ</p>
+                            <h3 class="feature-wide__title">初めての大会開催を考えている</h3>
+                            <p class="feature-wide__desc">
+                                何から始めたらいいか分からない方も大丈夫です。
+                            </p>
+                            <a class="feature-wide__link" href="#" aria-label="詳細を見る">→</a>
+                        </div>
+
+                        <img src="../assets/img/pages/service_event/challenge.png" alt="チャレンジ" />
+                    </div>
+                </article>
+
+                <!-- 中：縦長カード -->
+                <article class="feature-card feature-card--tall">
+                    <div class="feature-tall">
+                    <div class="feature-tall__icon" aria-hidden="true">
+                        <!-- 仮アイコン：カレンダー -->
+                        <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M3 18h18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        <path d="M6 16l6-3 6 3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 12V7h6l2 3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 7h-1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+
+                    <h3 class="feature-tall__title">新しい客層を呼び込みたい</h3>
+                    <p class="feature-tall__desc">
+                        イベントは新しい出会いを生む最良の手段です。
+                    </p>
+                    <a class="feature-tall__link" href="#" aria-label="詳細を見る">→</a>
+                    </div>
+                </article>
+
+                <!-- 右：縦長カード -->
+                <article class="feature-card feature-card--tall">
+                    <div class="feature-tall">
+                    <div class="feature-tall__icon" aria-hidden="true">
+                        <!-- 仮アイコン：スマホ -->
+                        <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M8 4h8v3c0 2.76-2.24 5-5 5h-1c-2.76 0-5-2.24-5-5V4Z"
+                                stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+                        <path d="M7 6H4c0 3 2 5 5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        <path d="M17 6h3c0 3-2 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        <path d="M12 12v5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        <path d="M9 20h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        <path d="M10 17h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+
+                    <h3 class="feature-tall__title">参加者に「また来たい」と言わせたい</h3>
+                    <p class="feature-tall__desc">
+                        体験を形に残すことで、記憶が深まります。
+                    </p>
+                    <a class="feature-tall__link" href="#" aria-label="詳細を見る">→</a>
+                    </div>
+                </article>
+                </div>
+            </div>
+        </section>
+        <!-- スクロールナビセクション -->
+        <section class="scroll-nav">
+            <div class="scroll-nav__inner">
+                <p class="scroll-nav__tagline">利用シーン</p>
+                <div class="scroll-nav__head">
+                    <div class="scroll-nav__no">01</div>
+                    <h2 class="scroll-nav__title">利用シーンを確認</h2>
+                </div>
+                <!-- TODO：ページ遷移せずにわかりやすくしたい -->
+            </div>
+        </section>
+
+        <!-- ⑥ クロージングセクション -->
+        <div class="about-closing-section">
+            <div class="about-closing-container">
+                <div class="about-closing-content">
+                    <h2 class="about-closing-title">体験が、次につながる</h2>
+                    <p class="about-closing-subtitle">
+                        大会を通じて生まれた思い出が、また来たいという気持ちになる。<br>
+                        その繰り返しが漁船の力になります。
+                    </p>
+                    <div class="about-closing-actions">
+                        <button class="about-closing-btn-primary">相談する</button>
+                        <button class="about-closing-btn-secondary">お問い合わせ</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="footer"></div>
