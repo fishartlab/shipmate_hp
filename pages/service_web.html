@@ -15,20 +15,11 @@
         <div id="header"></div>
 
         <!-- ① ファーストビュー（ヒーローセクション） -->
-        <div class="hero-section">
+        <div class="hero-section hero-section--compact">
             <div class="hero__container">
                 <div class="hero__content">
-                    <h1 class="hero__title">
-                        見られて終わらない<br>予約につながるWeb
-                    </h1>
-                    <p class="hero__subtitle">
-                        Webサイトは「作ること」ではなく、「予約につなげること」が本当の目的です。<br>
-                        漁船集客の現場に寄り添い、予約まで導くWebをご提案します。
-                    </p>
-                    <div class="hero__actions">
-                        <button class="hero__btn hero__btn--primary">相談する</button>
-                        <button class="hero__btn">詳しく見る</button>
-                    </div>
+                    <h1 class="hero__title">Web制作</h1>
+                    <p class="hero__subtitle">予約につなげるWebサイトをご提案します</p>
                 </div>
             </div>
         </div>
@@ -49,9 +40,6 @@
                         <p class="two-col__description">
                             Todo
                         </p>
-                        <div class="two-col__actions">
-                            <button class="two-col__btn">詳しく</button>
-                        </div>
                     </div>
                     <div class="two-col__image">
                         <img src="../assets/img/pages/service_web/issue.png" alt="課題" />
@@ -74,9 +62,6 @@
                             スマートフォンで迷わず予約できる設計にします。<br>
                             初心者の不安も解消し、興味を行動に変える仕組みをつくります。
                         </p>
-                        <div class="two-col__actions">
-                            <button class="two-col__btn">詳しく</button>
-                        </div>
                     </div>
                     <div class="two-col__image">
                         <img src="../assets/img/pages/service_web/support_detail.png" alt="提供内容" />
@@ -86,16 +71,96 @@
         </div>
 
         <!-- できることセクション（メニュー） -->
-        <section class="card-grid-section">
-            <div class="card-grid-section__inner">
-                <p class="card-grid-section__eyebrow">できること</p>
-                <h2 class="card-grid-section__title">LPが担う、予約までの役割</h2>
-                <p class="card-grid-section__lead">
-                    情報をひとつにまとめ、迷いなく予約へ進める導線をつくります。
+        <section class="card-grid-section" id="menu">
+        <div class="card-grid-section__inner">
+            <p class="card-grid-section__eyebrow">できること</p>
+            <h2 class="card-grid-section__title">LPが担う、予約までの役割</h2>
+            <p class="card-grid-section__lead">
+            情報をひとつにまとめ、迷いなく予約へ進める導線をつくります。
+            </p>
+
+            <!-- カードグリッド -->
+            <div class="card-grid">
+            <!-- 1 -->
+            <a class="card" href="#problem">
+                <div class="card__icon" aria-hidden="true">
+                <!-- 情報整理アイコン（SVG） -->
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M7 7h10M7 12h10M7 17h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"
+                    stroke="currentColor" stroke-width="2"/>
+                </svg>
+                </div>
+                <div class="card__body">
+                <p class="card__title">情報の集約</p>
+                <p class="card__text">
+                    料金・流れ・予約方法を1ページに整理し、迷いを減らします。
                 </p>
-                <!-- TODO：ページ遷移せずにわかりやすくしたい -->
+                </div>
+                <span class="card__arrow" aria-hidden="true">→</span>
+            </a>
+
+            <!-- 2 -->
+            <a class="card" href="#video">
+                <div class="card__icon" aria-hidden="true">
+                <!-- 動画アイコン -->
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M4 7a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7Z"
+                    stroke="currentColor" stroke-width="2"/>
+                    <path d="M16 10l4-2v8l-4-2v-4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M9 9l4 3-4 3V9Z" fill="currentColor"/>
+                </svg>
+                </div>
+                <div class="card__body">
+                <p class="card__title">短尺動画制作</p>
+                <p class="card__text">
+                    漁船の空気感や体験の本質が、自然に伝わる動画を作ります。
+                </p>
+                </div>
+                <span class="card__arrow" aria-hidden="true">→</span>
+            </a>
+
+            <!-- 3 -->
+            <a class="card" href="#lp">
+                <div class="card__icon" aria-hidden="true">
+                <!-- LP/スマホアイコン -->
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M8 3h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+                    stroke="currentColor" stroke-width="2"/>
+                    <path d="M10 7h4M10 11h6M10 15h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                </div>
+                <div class="card__body">
+                <p class="card__title">LP制作（予約導線）</p>
+                <p class="card__text">
+                    スマホでも迷わず予約できる設計で、興味を行動へ変えます。
+                </p>
+                </div>
+                <span class="card__arrow" aria-hidden="true">→</span>
+            </a>
+
+            <!-- 4 -->
+            <a class="card" href="#support">
+                <div class="card__icon" aria-hidden="true">
+                <!-- 伴走アイコン -->
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Z" stroke="currentColor" stroke-width="2"/>
+                    <path d="M4 21a8 8 0 0 1 16 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M17 8h4M19 6v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                </div>
+                <div class="card__body">
+                <p class="card__title">伴走・改善</p>
+                <p class="card__text">
+                    代行ではなく、伝え方の整理から改善まで一緒に進めます。
+                </p>
+                </div>
+                <span class="card__arrow" aria-hidden="true">→</span>
+            </a>
             </div>
+        </div>
         </section>
+
 
         <div id="footer"></div>
     </div>
