@@ -27,24 +27,13 @@ function getHeaderHTML() {
             <div class="nav-container">
                 <div class="nav-logo-wrapper">
                     <a href="${basePath}index.html" class="nav-logo">
+                        <img src="${basePath}assets/img/common/logo.png" alt="SHIPMATE" class="nav-logo-img" />
                     </a>
                 </div>
                 <div class="nav-right">
                     <div class="nav-links">
-                        <div class="nav-link${currentPage === 'home' ? ' nav-link-active' : ''}">
-                            <a href="${basePath}index.html" class="nav-link-text">ホーム</a>
-                        </div>
                         <div class="nav-link${currentPage === 'contact' ? ' nav-link-active' : ''}">
                             <a href="${pagesPath}contact.html" class="nav-link-text">お問い合わせ</a>
-                        </div>
-                        <div class="nav-link nav-link-has-dropdown${currentPage === 'service' ? ' nav-link-active' : ''}">
-                            <div class="nav-link-text">サービス</div>
-                            <div class="nav-dropdown-menu">
-                                <a href="${pagesPath}service_promotion.html" class="nav-dropdown-item">SNS集客支援</a>
-                                <a href="${pagesPath}service_web.html" class="nav-dropdown-item">Web制作</a>
-                                <a href="${pagesPath}service_design.html" class="nav-dropdown-item">ブランディング</a>
-                                <a href="${pagesPath}service_event.html" class="nav-dropdown-item">イベント企画・運営</a>
-                            </div>
                         </div>
                     </div>
                 </div>
