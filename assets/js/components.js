@@ -27,7 +27,7 @@ function getHeaderHTML() {
             <div class="nav-container">
                 <div class="nav-logo-wrapper">
                     <a href="${basePath}index.html" class="nav-logo">
-                        <img src="${basePath}assets/img/common/logo.png" alt="SHIPMATE" class="nav-logo-img" />
+                        <img src="${basePath}assets/img/common/logo_transparent.png" alt="SHIPMATE" class="nav-logo-img" />
                     </a>
                 </div>
                 <div class="nav-right">
@@ -51,51 +51,23 @@ function getFooterHTML() {
         <div class="footer">
             <div class="footer-container">
                 <div class="footer-content">
-                    <div class="footer-main">
-                        <div class="footer-brand">
-                            <a href="${basePath}index.html" class="footer-logo">
-                                 <img src="${basePath}assets/img/logo.png" alt="SHIPMATE" class="footer-logo-img" />
-                            </a>
-                            <p class="footer-description">漁船の魅力を「選ばれる体験」に変える、集客のトータルサポート。</p>
-                        </div>
-
-                        <div class="footer-links">
-                            <div class="footer-links-column">
-                                <div class="footer-links-title">ページ</div>
-                                <div class="footer-links-list">
-                                    <a href="${basePath}index.html" class="footer-link-item">ホーム</a>
-                                    <a href="${pagesPath}contact.html" class="footer-link-item">お問い合わせ</a>
-                                </div>
+                    <div class="footer-brand">
+                        <img src="${basePath}assets/img/common/logo_transparent.png" alt="SHIPMATE" class="footer-brand-logo" />
+                        <p class="footer-description">釣りの感動を、もっと多くの人へ。</p>
+                    </div>
+                    <div class="footer-related">
+                        <div class="footer-related-label">関連事業</div>
+                        <a href="https://fishartlab.com" class="footer-related-link" target="_blank" rel="noopener noreferrer">
+                            <img src="${basePath}assets/img/common/fishartlab.png" alt="Fish Art Lab" class="footer-related-logo" />
+                            <div class="footer-related-info">
+                                <span class="footer-related-name">Fish Art Lab</span>
+                                <span class="footer-related-url">fishartlab.com</span>
                             </div>
-
-                            <div class="footer-links-column">
-                                <div class="footer-links-title">サービス</div>
-                                <div class="footer-links-list">
-                                    <a href="${pagesPath}service_promotion.html" class="footer-link-item">集客支援</a>
-                                    <a href="${pagesPath}service_web.html" class="footer-link-item">Web制作</a>
-                                    <a href="${pagesPath}service_design.html" class="footer-link-item">ブランディング</a>
-                                    <a href="${pagesPath}service_event.html" class="footer-link-item">イベント企画</a>
-                                </div>
-                            </div>
-
-                            <div class="footer-links-column">
-                                <div class="footer-links-title">フォロー</div>
-                                <div class="footer-social-links">
-                                    <a href="https://www.instagram.com/fishartlab" class="footer-social-link">
-                                        <img class="footer-social-icon" src="${basePath}assets/img/sns/instagram.svg" alt="Instagram" />
-                                </div>
-                            </div>
-                        </div>W
+                        </a>
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <div class="footer-bottom-content">
-                        <div class="footer-copyright">© 2025 SHIPMATE. All rights reserved.</div>
-                        <div class="footer-bottom-links">
-                            <a href="#" class="footer-bottom-link">プライバシーポリシー</a>
-                            <a href="#" class="footer-bottom-link">利用規約</a>
-                        </div>
-                    </div>
+                    <p class="footer-copyright">© 2026 SHIPMATE. All rights reserved.</p>
                 </div>
             </div>
         </div>
