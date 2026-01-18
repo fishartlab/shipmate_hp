@@ -35,10 +35,11 @@
 .page .nav-container {
     align-items: center;
     justify-content: space-between;
-    align-self: stretch;
     display: flex;
     position: relative;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     flex: 0 0 auto;
 }
 
@@ -1153,8 +1154,9 @@
 }
 
 .page .footer-container {
-    max-width: var(--spacing-sizing-container-container-large);
+    max-width: 1200px;
     width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -1163,8 +1165,9 @@
 .page .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     width: 100%;
+    gap: 40px;
 }
 
 .page .footer-brand {
@@ -1172,6 +1175,7 @@
     flex-direction: column;
     gap: 12px;
     align-items: flex-start;
+    flex: 1;
 }
 
 .page .footer-brand-logo {
@@ -1193,6 +1197,37 @@
     font-size: 14px;
     color: #718096 !important;
     line-height: 1.6;
+}
+
+.page .footer-social {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.page .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.page .social-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.page .social-link i,
+.page .social-link svg {
+    width: 24px;
+    height: 24px;
 }
 
 .page .footer-related {
@@ -1426,7 +1461,7 @@
 }
 
 .about-concept-container {
-    max-width: var(--spacing-sizing-container-container-large);
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
@@ -1483,7 +1518,7 @@
 }
 
 .about-services-container {
-    max-width: var(--spacing-sizing-container-container-large);
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
@@ -1632,7 +1667,7 @@
 }
 
 .about-mvv-container {
-    max-width: var(--spacing-sizing-container-container-large);
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
@@ -1765,7 +1800,7 @@
 }
 
 .about-target-container {
-    max-width: var(--spacing-sizing-container-container-large);
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
@@ -1778,7 +1813,9 @@
 }
 
 .about-target-text {
-    flex: 1;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -1803,11 +1840,14 @@
     list-style: none;
     padding: 0;
     margin: 0 0 40px;
+    width: 100%;
+    max-width: 600px;
 }
 
 .about-target-item {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 16px;
     padding: 16px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -1917,10 +1957,10 @@
     font-size: 36px;
     font-weight: 700;
     color: var(--color-schemes-color-scheme-1-text);
-    line-height: 1.4;
+    line-height: 1.5;
     margin: 0 0 20px;
     text-align: center;
-    white-space: nowrap;
+    max-width: 100%;
 }
 
 .about-closing-subtitle {
@@ -2147,7 +2187,7 @@
 .page .about-target-container,
 .page .about-closing-container {
     width: 100%;
-    max-width: var(--spacing-sizing-container-container-large);
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -2211,12 +2251,21 @@
     text-align: center;
 }
 
-.about-services-header,
-.about-mvv-header,
+.about-services-header
+.about-mvv-header
 .about-target-text,
 .about-closing-container,
+    width: 100%;
+    text-align: center;
+}
+
 .about-closing-content {
     width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -2256,12 +2305,12 @@
 
 .hero-section {
     width: 100%;
-    min-height: 500px;
+    min-height: calc(100vh - 70px);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 140px 5% 100px;
-    margin-top: 80px;
+    padding: 120px 5% 120px;
+    margin-top: 70px;
     background: var(--gradient-hero);
     position: relative;
     overflow: hidden;
@@ -2321,13 +2370,13 @@
 
 .hero__title {
     font-family: var(--font-display);
-    font-size: clamp(32px, 5vw, 56px);
+    font-size: clamp(36px, 5vw, 64px);
     font-weight: 800;
     color: #fff;
-    line-height: 1.2;
+    line-height: 1.3;
     white-space: nowrap;
     margin: 0 0 24px;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     letter-spacing: -0.02em;
     text-align: center;
 }
@@ -2406,7 +2455,10 @@
         min-height: 400px;
     }
     .hero__title {
-        font-size: 32px;
+        font-size: 28px;
+        white-space: normal;
+        word-break: keep-all;
+        overflow-wrap: break-word;
     }
     .hero__subtitle {
         font-size: 16px;
@@ -4355,4 +4407,165 @@ html {
     margin: 0;
     line-height: 1.8;
     opacity: 0.85;
+}
+
+
+/* ===== レスポンシブ対応（追加） ===== */
+
+/* タブレット・小型PC（1226px以下） */
+@media (max-width: 1226px) {
+    .page .nav-container {
+        max-width: 100%;
+        padding: 0 16px;
+    }
+}
+
+/* スマホ対応（768px以下） */
+@media (max-width: 768px) {
+    /* フッター */
+    .page .footer {
+        padding: 48px 24px 32px;
+    }
+
+    .page .footer-content {
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .page .footer-brand {
+        align-items: center;
+    }
+
+    .page .footer-related {
+        align-items: center;
+    }
+
+    .page .footer-social {
+        margin-top: 0;
+    }
+
+    .page .footer-bottom {
+        padding-top: 24px;
+    }
+
+    /* ナビゲーション */
+    .page .navbar {
+        padding: 8px 16px;
+    }
+
+    .page .nav-container {
+        max-width: 100%;
+    }
+
+    .page .nav-logo-img {
+        height: 36px;
+    }
+
+    .page .nav-right {
+        gap: 8px;
+    }
+
+    .page .nav-links {
+        gap: 8px;
+    }
+
+    .page .nav-link {
+        padding: 6px 10px;
+    }
+
+    .page .nav-link-text {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    /* About Concept テキスト調整 */
+    .about-concept-text {
+        text-align: center;
+    }
+
+    .about-concept-text .section-tagline {
+        justify-content: center;
+    }
+
+    .about-concept-description {
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .about-concept-description br {
+        display: none;
+    }
+
+    /* サービス説明の改行を非表示 */
+    .about-service-desc br {
+        display: none;
+    }
+
+    /* Value アイテム */
+    .about-value-item {
+        padding: 20px;
+    }
+
+    .about-value-title {
+        font-size: 16px;
+    }
+
+    .about-value-desc {
+        font-size: 13px;
+    }
+
+    /* ターゲットセクション */
+    .about-target-text {
+        padding: 0 16px;
+    }
+
+    .about-target-item {
+        justify-content: center;
+    }
+
+    .about-target-text-item {
+        font-size: 15px;
+    }
+
+    /* クロージングセクション */
+    .about-closing-title {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .about-closing-subtitle {
+        font-size: 15px;
+    }
+}
+
+/* 480px以下（小型スマホ） */
+@media (max-width: 480px) {
+    .hero__title {
+        font-size: 24px;
+    }
+
+    .about-concept-title,
+    .about-services-title,
+    .about-mvv-title,
+    .about-target-title {
+        font-size: 24px;
+    }
+
+    .about-mvv-heading {
+        font-size: 20px;
+    }
+
+    .about-closing-title {
+        font-size: 22px;
+    }
+
+    .about-service-name {
+        font-size: 18px;
+    }
+
+    .about-service-image {
+        height: 220px;
+    }
 }
